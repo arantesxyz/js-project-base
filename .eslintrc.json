@@ -1,0 +1,45 @@
+{
+    "env": {
+        "es2021": true,
+				"node": true,
+				"jest/globals": true
+    },
+    "extends": [
+		"eslint:recommended"
+	],
+    "parserOptions": {
+        "ecmaVersion": 12,
+        "sourceType": "script"
+    },
+    "rules": {
+        "indent": [
+			"error",
+			2
+		],
+		"comma-spacing": "warn",
+		"max-len": "error",
+		"max-depth": "error",
+		"linebreak-style": [
+			"error",
+			"unix"
+		],
+		"quotes": [
+			"error",
+			"double"
+		],
+		"semi": [
+			"warn",
+			"always"
+		],
+		"object-curly-spacing": [
+			"error",
+			"always"
+		],
+		"object-property-newline": [
+			"warn",
+			{
+				"allowAllPropertiesOnSameLine": true
+			}
+		]
+    }
+}

@@ -1,0 +1,27 @@
+{
+  "name": "js-project-base",
+  "version": "1.0.0",
+  "description": "Boilerplate for javascript projects",
+  "main": "src/index.js",
+  "repository": "https://github.com/arantesxyz/js-project-base.git",
+  "author": "Gustavo Arantes <me@arantes.dev>",
+  "license": "MIT",
+  "scripts": {
+    "start": "node src/index.js",
+    "dev": "nodemon src/index.dev.js",
+    "lint": "eslint '*/**/*.{js,jsx}' --quiet --fix",
+    "test": "jest"
+  },
+  "husky": {
+    "hooks": {
+      "pre-push": "yarn lint && yarn test"
+    }
+  },
+  "devDependencies": {
+    "dotenv": "^8.2.0",
+    "eslint": "^7.2.0",
+    "husky": "^4.3.0",
+    "jest": "^26.6.1",
+    "nodemon": "^2.0.6"
+  }
+}
